@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/produtos")
+@RequestMapping("/Produtos")
 public class ProdutoController {
 
     @GetMapping
@@ -22,7 +22,7 @@ public class ProdutoController {
         return "Produto adicionado com sucesso!";
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/Id")
     public String removerProduto(@PathVariable Long id) {
         DatabaseSimulado.produtos.removeIf(produto -> produto.getId().equals(id));
         return "Produto removido com sucesso!";

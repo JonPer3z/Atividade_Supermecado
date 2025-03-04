@@ -7,7 +7,7 @@ import com.supermecado.DataBase.DatabaseSimulado;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/gerentes")
+@RequestMapping("/Gerentes")
 public class GerenteController {
 
     @GetMapping
