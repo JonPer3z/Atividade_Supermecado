@@ -22,7 +22,7 @@ public class FornecedorController {
         return "Fornecedor adicionado com sucesso!";
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("")
     public String removerFornecedor(@PathVariable Long id) {
         DatabaseSimulado.fornecedores.removeIf(fornecedor -> fornecedor.getId().equals(id));
         return "Fornecedor removido com sucesso!";

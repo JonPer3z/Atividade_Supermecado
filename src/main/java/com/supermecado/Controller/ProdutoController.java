@@ -22,7 +22,7 @@ public class ProdutoController {
         return "Produto adicionado com sucesso!";
     }
 
-    @DeleteMapping("/Id")
+    @DeleteMapping("")
     public String removerProduto(@PathVariable Long id) {
         DatabaseSimulado.produtos.removeIf(produto -> produto.getId().equals(id));
         return "Produto removido com sucesso!";
